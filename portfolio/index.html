@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Syed Moin Hussain — Programmer, Author & Illustrator</title>
+<meta name="description" content="Portfolio of Syed Moin Hussain — freelance full-stack web & app developer, author and illustrator based in Kolkata, India.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=JetBrains+Mono:wght@400;500;600&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- noise / grain overlay -->
+<div class="grain" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="#top" class="brand">S. M. HUSSAIN</a>
+    <nav class="site-nav">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero-inner">
+      <p class="eyebrow mono">// KOLKATA, INDIA — REMOTE</p>
+      <h1 class="hero-title">
+        Building web apps illustrated worlds, line by line.
+      </h1>
+      <p class="hero-sub">
+        I'm Syed Moin Hussain — a freelance full-stack developer building web &amp;
+        app products with Django and Python, and the author-illustrator of an
+        ongoing sci-fi book series. Two crafts, one obsession with structure.
+      </p>
+      <div class="hero-actions">
+        <a href="#work" class="btn btn-primary">See the work</a>
+        <a href="resume/Syed_Moin_Hussain_Resume.pdf" class="btn btn-ghost">Download résumé</a>
+      </div>
+      <pre class="terminal-line mono" aria-hidden="true"><span class="prompt">$</span> <span class="type-target" id="typeTarget"></span><span class="cursor">▌</span></pre>
+    </div>
+
+    <div class="stamp" aria-hidden="true">
+      <span>OPEN TO WORK</span>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section about" id="about">
+    <div class="section-head">
+      <p class="eyebrow mono">01 — ABOUT</p>
+      <h2>Two disciplines, one method.</h2>
+    </div>
+    <div class="about-grid">
+      <p class="about-text">
+        I build full-stack web and app products &mdash; mostly with Python and
+        Django &mdash; backed by coursework from Harvard's CS50 series, MIT
+        Open Learning, and the University of Michigan. Databases are part of
+        the toolkit, not the whole job: I design the schema when a project
+        needs one, but the focus is shipping working apps end to end.
+      </p>
+      <p class="about-text">
+        Outside of client work, I write and illustrate <em>Chipku</em>, a
+        sci-fi book series following a squirrel bounty hunter across a desert
+        frontier world. Both crafts come down to the same instinct: take
+        something sprawling and give it a clear, working structure.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section skills">
+    <div class="section-head">
+      <p class="eyebrow mono">02 — STACK</p>
+      <h2>What I build with.</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <p class="skill-label mono">frameworks</p>
+        <p>Django, Flask, AJAX</p>
+      </div>
+      <div class="skill-card">
+        <p class="skill-label mono">languages</p>
+        <p>Python, JavaScript, SQL, HTML/CSS</p>
+      </div>
+      <div class="skill-card">
+        <p class="skill-label mono">databases</p>
+        <p>PostgreSQL, MySQL, SQLite, NoSQL, Database Design, DBMS</p>
+      </div>
+      <div class="skill-card">
+        <p class="skill-label mono">foundations</p>
+        <p>Data Structures, Algorithms, Regular Expressions, Cybersecurity basics</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WORK / PROJECTS ============ -->
+  <section class="section work" id="work">
+    <div class="section-head">
+      <p class="eyebrow mono">03 — CASE FILES</p>
+      <h2>Selected work.</h2>
+    </div>
+
+    <div class="case-grid">
+
+      <!-- Breathing Bot -->
+      <article class="case-card">
+        <div class="case-meta mono">
+          <span>id: 001</span><span>status: live</span><span>type: web-app</span>
+        </div>
+        <h3>Breathing Bot</h3>
+        <p class="case-desc">
+          A guided breathing &amp; meditation web app with real-time visual
+          feedback, secure auth, session logging, and CSV export of your
+          meditation history.
+        </p>
+        <p class="case-stack mono">Django · Python · SQLite · Bootstrap · JS</p>
+        <div class="case-links">
+          <a href="#" class="case-link" data-placeholder="render-url">Live demo →</a>
+          <a href="https://github.com/syedmoinhussain9/breathing-bot-django" class="case-link">GitHub →</a>
+        </div>
+      </article>
+
+      <!-- Turf Booking -->
+      <article class="case-card">
+        <div class="case-meta mono">
+          <span>id: 002</span><span>status: complete</span><span>type: web-app</span>
+        </div>
+        <h3>Turf Booking &amp; Team Management</h3>
+        <p class="case-desc">
+          A full-stack cricket turf booking and team management platform:
+          player search, booking workflows, captain &amp; teammate management,
+          and user profiles.
+        </p>
+        <p class="case-stack mono">Django · Python</p>
+        <div class="case-links">
+          <a href="https://github.com/syedmoinhussain9/turf-booking-management-system" class="case-link">GitHub →</a>
+        </div>
+      </article>
+
+      <!-- Data Portfolio -->
+      <article class="case-card">
+        <div class="case-meta mono">
+          <span>id: 003</span><span>status: ongoing</span><span>type: tooling</span>
+        </div>
+        <h3>Data Systems &amp; Automation</h3>
+        <p class="case-desc">
+          A growing collection of billing generation tools, ETL data-cleaning
+          pipelines, inventory databases, and sales analytics systems built for
+          freelance clients.
+        </p>
+        <p class="case-stack mono">SQL · PostgreSQL · Python</p>
+        <div class="case-links">
+          <a href="https://github.com/syedmoinhussain9/data-portfolio" class="case-link">GitHub →</a>
+        </div>
+      </article>
+
+      <!-- Chipku book -->
+      <article class="case-card case-card--book">
+        <a href="https://www.amazon.in/CHIPKU-Dust-Blood-Gang-Cindara-Frontier-ebook/dp/B0GFF1YKBP" class="case-cover-link" aria-label="View Chipku and the Dust-Blood Gang on Amazon">
+          <img class="case-cover" src="assets/images/cover%20photo.png" alt="Cover of Chipku and the Dust-Blood Gang, showing Chipku the squirrel bounty hunter and his AI suit-bot Dabba in a desert frontier scene." loading="lazy">
+        </a>
+        <div class="case-book-content">
+          <div class="case-meta mono">
+            <span>id: 004</span><span>status: published</span><span>type: book — book 1 of 24</span>
+          </div>
+          <h3>Chipku and the Dust-Blood Gang</h3>
+          <p class="case-desc">
+            A sci-fi middle-grade novel I wrote and illustrated: a squirrel
+            bounty hunter and his AI companion navigate a lawless desert
+            frontier. First book in a planned 24-book series.
+          </p>
+          <p class="case-stack mono">Written &amp; Illustrated · Self-Published</p>
+          <div class="case-links">
+            <a href="https://www.amazon.in/CHIPKU-Dust-Blood-Gang-Cindara-Frontier-ebook/dp/B0GFF1YKBP" class="case-link">Read on Amazon →</a>
+            <a href="#gallery" class="case-link">See the illustrations →</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="section gallery" id="gallery">
+    <div class="section-head">
+      <p class="eyebrow mono">04 — SKETCHBOOK</p>
+      <h2>Illustrations from Chipku.</h2>
+      <p class="gallery-sub">Black-and-white line art from the Dust-Blood Gang.</p>
+    </div>
+
+    <div class="carousel">
+      <button class="carousel-arrow carousel-prev" id="prevBtn" aria-label="Previous illustration">‹</button>
+
+      <button class="carousel-viewport" id="carouselViewport" aria-label="View current illustration larger">
+        <img id="carouselImg" src="assets/images/image%201.png" alt="Chipku illustration 1" class="carousel-image">
+      </button>
+
+      <button class="carousel-arrow carousel-next" id="nextBtn" aria-label="Next illustration">›</button>
+    </div>
+
+    <p class="carousel-count mono" id="carouselCount" aria-live="polite">1 / 19</p>
+
+    <div class="carousel-thumbs" id="carouselThumbs"></div>
+  </section>
+
+  <!-- Lightbox overlay (full-screen view of the current slide) -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged illustration" hidden>
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+    <img src="" alt="" id="lightboxImg">
+  </div>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section experience" id="experience">
+    <div class="section-head">
+      <p class="eyebrow mono">05 — RECORD</p>
+      <h2>Where I've worked.</h2>
+    </div>
+
+    <ol class="timeline">
+      <li class="timeline-item">
+        <p class="timeline-date mono">Jan 2026 — Present</p>
+        <h3>Programmer</h3>
+        <p>Freelance / Self-Employed &middot; Remote</p>
+        <p class="timeline-desc">Building full-stack web apps and database-backed tools — inventory systems, billing, and structured data workflows — for freelance clients.</p>
+      </li>
+      <li class="timeline-item">
+        <p class="timeline-date mono">Apr 2025 — Present</p>
+        <h3>Author &amp; Illustrator</h3>
+        <p>Self-Employed</p>
+        <p class="timeline-desc">Writing and illustrating the Chipku series, self-published via Amazon KDP.</p>
+      </li>
+      <li class="timeline-item">
+        <p class="timeline-date mono">Jun 2023 — Present</p>
+        <h3>PA</h3>
+        <p>Law Firm &middot; Part-time, Remote</p>
+        <p class="timeline-desc">Administrative and legal writing support.</p>
+      </li>
+      <li class="timeline-item">
+        <p class="timeline-date mono">Jan 2020 — May 2023</p>
+        <h3>Partner</h3>
+        <p>Syrius Distributors</p>
+        <p class="timeline-desc">FMCG sales and business administration.</p>
+      </li>
+    </ol>
+
+    <p class="timeline-more">
+      <a href="resume/Syed_Moin_Hussain_Resume.pdf">Full work history &amp; education on résumé →</a>
+    </p>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact" id="contact">
+    <div class="section-head">
+      <p class="eyebrow mono">06 — CONTACT</p>
+      <h2>Let's work together.</h2>
+    </div>
+    <div class="contact-grid">
+      <a href="mailto:youremail@example.com" class="contact-link">
+        <span class="mono">email</span>
+        <span>youremail@example.com</span>
+      </a>
+      <a href="https://github.com/syedmoinhussain9" class="contact-link">
+        <span class="mono">github</span>
+        <span>syedmoinhussain9</span>
+      </a>
+      <a href="https://www.linkedin.com/in/syed-moin-hussain-5823b2195" class="contact-link">
+        <span class="mono">linkedin</span>
+        <span>syed-moin-hussain</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p class="mono">© <span id="year"></span> Syed Moin Hussain — built with Django-brain &amp; ink-stained hands.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
