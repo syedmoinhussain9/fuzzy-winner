@@ -2,15 +2,15 @@
    TOKENS
    ========================================================================== */
 :root {
-  --bg:           #14151c;
-  --surface:      #1c1e2a;
-  --surface-alt:  #242737;
-  --ink:          #eee6d6;
-  --muted:        #948d7c;
-  --accent-sand:  #c98a3e;
-  --accent-teal:  #49b9ae;
-  --accent-rust:  #a4462c;
-  --border:       #33364a;
+  --bg:           #f7f3ea;
+  --surface:      #ffffff;
+  --surface-alt:  #efe8d8;
+  --ink:          #201f1a;
+  --muted:        #6b6455;
+  --accent-sand:  #b5732b;
+  --accent-teal:  #1f8079;
+  --accent-rust:  #9c4327;
+  --border:       #ddd3bd;
 
   --font-display: 'Fraunces', serif;
   --font-mono:    'JetBrains Mono', monospace;
@@ -93,7 +93,7 @@ p { margin: 0; }
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(20, 21, 28, 0.85);
+  background: rgba(247, 243, 234, 0.85);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border);
 }
@@ -174,9 +174,9 @@ p { margin: 0; }
 
 .btn-primary {
   background: var(--accent-sand);
-  color: var(--bg);
+  color: #fff;
 }
-.btn-primary:hover { background: var(--accent-rust); color: var(--ink); transform: translateY(-2px); }
+.btn-primary:hover { background: var(--accent-rust); color: #fff; transform: translateY(-2px); }
 
 .btn-ghost {
   border: 1px solid var(--border);
@@ -258,6 +258,53 @@ p { margin: 0; }
 
 @media (max-width: 720px) {
   .about-grid { grid-template-columns: 1fr; }
+}
+
+/* Services -----------------------------------------------------------------*/
+.services-sub {
+  color: var(--muted);
+  font-size: 1.05rem;
+  max-width: 640px;
+  margin-top: 1rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.service-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+}
+
+.service-num {
+  color: var(--accent-teal);
+  font-size: 0.8rem;
+  margin-bottom: 0.75rem;
+}
+
+.service-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+
+.service-card p:last-child {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.services-cta {
+  display: flex;
+  justify-content: flex-start;
+}
+
+@media (max-width: 860px) {
+  .services-grid { grid-template-columns: 1fr; }
 }
 
 /* Skills ---------------------------------------------------------------- */
