@@ -1,6 +1,37 @@
 // Footer year
 document.getElementById('year').textContent = new Date().getFullYear();
 
+// ---- Theme toggle (light/dark) ----
+(function() {
+  const root = document.documentElement;
+  const toggle = document.getElementById('themeToggle');
+  if (!toggle) return;
+
+  function currentTheme() {
+    return root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+  }
+
+  function applyTheme(theme) {
+    if (theme === 'dark') {
+      root.setAttribute('data-theme', 'dark');
+    } else {
+      root.removeAttribute('data-theme');
+    }
+    toggle.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+  }
+
+  // Sync button label with whatever the inline head script already set
+  applyTheme(currentTheme());
+
+  toggle.addEventListener('click', () => {
+    const next = currentTheme() === 'dark' ? 'light' : 'dark';
+    applyTheme(next);
+    try {
+      localStorage.setItem('theme', next);
+    } catch (e) {}
+  });
+})();
+
 // ---- Gallery carousel ----
 const TOTAL_ILLUSTRATIONS = 19; // update this if you add/remove images from assets/images/
 
