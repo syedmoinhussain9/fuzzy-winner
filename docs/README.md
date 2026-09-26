@@ -1,4 +1,4 @@
-# Portfolio — Syed Moin Hussain
+# Portfolio — S M Hussain
 
 Single-page personal portfolio site. Static HTML/CSS/JS, no build step, deployable directly via GitHub Pages or any static host.
 
